@@ -7,7 +7,7 @@ IF EXIST *.out (
 IF EXIST *.cpp (
 	ECHO COMPILING & ECHO.
 	FOR %%i IN (*.cpp) DO (
-		gcc %%~fi	
+		gcc "%%~ni.cpp"
 	)
 	ECHO JUDGING
 	FOR %%i IN (input/*) DO (
